@@ -1,0 +1,34 @@
+{
+  "name": "pipe-fy",
+  "version": "1.0.0",
+  "description": "Combine functions calling each function with the output of the last one",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "jest": {
+    "testEnvironment": "jest-environment-node",
+    "transform": {}
+  },
+  "type": "module",
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "jest": "^27.5.1"
+  },
+  "dependencies": {
+  },
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathieuprog/pipe-fy.git"
+  },
+  "keywords": [
+    "pipe, pipeline, compose"
+  ],
+  "author": "Mathieu Decaffmeyer",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/mathieuprog/pipe-fy/issues"
+  },
+  "homepage": "https://github.com/mathieuprog/pipe-fy#readme"
+}
