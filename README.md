@@ -1,11 +1,11 @@
-# `pipe-fy`
+# `pipe-pipefy`
 
-`pipe-fy` allows to combine functions, calling each function with the output of the last one.
+`pipe-pipefy` allows to combine functions, calling each function with the output of the last one.
 
 ## Usage
 
 ```javascript
-import { pipe } from 'pipe-fy';
+import { pipe } from 'pipe-pipefy';
 
 const getName = (person) => person.name;
 const uppercase = (string) => string.toUpperCase();
@@ -22,7 +22,7 @@ expect(result).toBe('MATHIEU');
 ```
 
 ```javascript
-import { pipe, pipefy } from 'pipe-fy';
+import { pipe, pipefy } from 'pipe-pipefy';
 
 const getName = (person) => person.name;
 const uppercase = (string) => string.toUpperCase();
@@ -42,8 +42,8 @@ expect(result).toBe('MATHIEUMATHIEU');
 
 ## Installation
 
-You can get `pipe-fy` via [npm](http://npmjs.com).
+You can get `pipe-pipefy` via [npm](http://npmjs.com).
 
 ```bash
-$ npm install pipe-fy --save
+$ npm install pipe-pipefy --save
 ```

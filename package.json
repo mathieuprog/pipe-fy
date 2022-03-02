@@ -1,5 +1,5 @@
 {
-  "name": "pipe-fy",
+  "name": "pipe-pipefy",
   "version": "1.0.0",
   "description": "Combine functions calling each function with the output of the last one",
   "scripts": {
@@ -20,7 +20,7 @@
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mathieuprog/pipe-fy.git"
+    "url": "git+https://github.com/mathieuprog/pipe-pipefy.git"
   },
   "keywords": [
     "pipe, pipeline, compose"
@@ -28,7 +28,7 @@
   "author": "Mathieu Decaffmeyer",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/mathieuprog/pipe-fy/issues"
+    "url": "https://github.com/mathieuprog/pipe-pipefy/issues"
   },
-  "homepage": "https://github.com/mathieuprog/pipe-fy#readme"
+  "homepage": "https://github.com/mathieuprog/pipe-pipefy#readme"
 }
