@@ -1,9 +1,11 @@
-import { pipe, pipeAsync, pipefy } from './index';
+import { pipe, pipeAsync, pipefy, pipefyIf } from './index';
 
 test('pipe', () => {
   const getName = (person) => person.name;
   const uppercase = (string) => string.toUpperCase();
   const repeat = (string, n) => (string + ' ').repeat(n).trimEnd();
+  const scream = (string) => string + '!';
+  const question = (string) => string + '?';
 
   const person = { name: 'Mathieu' };
 
@@ -11,10 +13,12 @@ test('pipe', () => {
     pipe(
       getName,
       uppercase,
-      pipefy(repeat, 2)
+      pipefy(repeat, 2),
+      pipefyIf(false, scream),
+      pipefyIf(true, question),
     )(person);
 
-  expect(result).toBe('MATHIEU MATHIEU');
+  expect(result).toBe('MATHIEU MATHIEU?');
 });
 
 test('pipeAsync', async () => {

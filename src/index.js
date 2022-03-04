@@ -24,8 +24,13 @@ const pipefy = (fun, ...args) => {
   return (accumulator) => fun(accumulator, ...args);
 };
 
+const pipefyIf = (condition, fun, ...args) => {
+  return (accumulator) => (condition) ? fun(accumulator, ...args) : accumulator;
+};
+
 export {
   pipe,
   pipeAsync,
-  pipefy
+  pipefy,
+  pipefyIf
 }
