@@ -73,7 +73,7 @@ const uppercaseAfterTimeout = (string) => {
 const person = { name: 'Mathieu' };
 
 const result =
-  pipe(
+  await pipeAsync(
     getName,
     uppercaseAfterTimeout
   )(person);
