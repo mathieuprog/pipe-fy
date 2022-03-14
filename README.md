@@ -65,7 +65,10 @@ import { pipeAsync } from 'pipe-pipefy';
 
 const getName = (person) => person.name;
 const uppercase = (string) => string.toUpperCase();
-const uppercaseAfterTimeout = (string) => new Promise(resolve => setTimeout(() => resolve(uppercase(string)), 50));
+
+const uppercaseAfterTimeout = (string) => {
+  return new Promise(resolve => setTimeout(() => resolve(uppercase(string)), 50));
+};
 
 const person = { name: 'Mathieu' };
 
